@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assistant IA precieux06</title>
+</head>
+<body>
+    <h1>🤖 Mon Assistant IA</h1>
+    <input type="text" id="question" placeholder="Posez votre question...">
+    <button onclick="askQuestion()">Demander</button>
+    <div id="reponse"></div>
+
+    <script>
+        async function askQuestion() {
+            const question = document.getElementById('question').value;
+            const reponseDiv = document.getElementById('reponse');
+            
+            reponseDiv.innerHTML = "Chargement...";
+            
+            // Ici, vous feriez un appel à votre API
+            // Note: Pour des raisons de sécurité, il faudrait une API backend
+            reponseDiv.innerHTML = "Fonctionnalité à implémenter avec un backend";
+        }
+    </script>
+</body>
+</html>
